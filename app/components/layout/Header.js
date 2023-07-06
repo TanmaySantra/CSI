@@ -1,13 +1,18 @@
+'use client'
+
+import { usePathname } from 'next/navigation'
 import Link from 'next/link';
 import React from 'react';
 import {FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter} from 'react-icons/fa6'
 const row = "flex flex-row "
 const socialIcons = "p-2 hover:bg-slate-200 cursor-pointer h-fit w-fit rounded"
 const gap = "w-4"
-const link = "uppercase h-full bg-blue "
+const link = "uppercase h-full p-2 rounded"
 export default function Header() {
+     const pathname = usePathname()
   return (
     <div className=''>
+        {console.log(pathname)}
         <div className={row + "px-4 py-2 justify-between mb-2 bg-blue-600"}>
             <span className='w-[400px] text-white text-sm'>University Of Engineering & Management, New Town, University Area, Plot No. III, B/5, New Town Rd, Action Area III, Newtown, Kolkata, West Bengal 700160</span>
 
@@ -34,15 +39,15 @@ export default function Header() {
                 <img src="/images/CSIFINALLOGO.png"/>
             </div>
             <div className={row + "mb-2 bg-slate-200 rounded px-4 py-2 "}>
-                <Link href='/'><div className={link +""}>home</div></Link>
+                <Link href='/'><div className={link+ (pathname==="/"?" bg-blue-200":"")}>home</div></Link>
                 <div className={gap}></div>
-                <Link href='/about'><div className={link}>about</div></Link>
+                <Link href='/about'><div className={link +( pathname==="/about"?" bg-blue-200":"")}>about</div></Link>
                 <div className={gap}></div>
-                <Link href='/contacts'><div className={link}>Contact</div></Link>
+                <Link href='/contacts'><div className={link+ (pathname==="/contacts"?" bg-blue-200":"")}>Contact</div></Link>
                 <div className={gap}></div>
-                <Link href='/event'><div className={link}>Event</div></Link>
+                <Link href='/event'><div className={link+ (pathname==="/event"?" bg-blue-200":"")}>Event</div></Link>
                 <div className={gap}></div>
-                <Link href='/gallery'><div className={link}>Gallery</div></Link>
+                <Link href='/gallery'><div className={link+ (pathname==="/gallery"?" bg-blue-200":"")}>Gallery</div></Link>
             </div>
         </header>
         
