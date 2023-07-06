@@ -7,10 +7,10 @@ const gap = "w-2"
 const link = "uppercase h-full "
 export default function Header() {
   return (
-    <div>
+    <div className=''>
         <header className='px-4 py-1'>
-            <div className={row + "justify-between mb-2"}>
-                <span className='w-[400px] text-sm'>University Of Engineering & Management, New Town, University Area, Plot No. III, B/5, New Town Rd, Action Area III, Newtown, Kolkata, West Bengal 700160</span>
+            <div className={row + "justify-between mb-2 bg-blue-600"}>
+                <span className='w-[400px] text-white text-sm'>University Of Engineering & Management, New Town, University Area, Plot No. III, B/5, New Town Rd, Action Area III, Newtown, Kolkata, West Bengal 700160</span>
 
                 <div className={row + " items-center"}>
                     <a className='text-sm' href="email:admissions@iemcal.com">admissions@iemcal.com</a>
@@ -32,12 +32,16 @@ export default function Header() {
             <div className={row + "w-[400px] mb-2"}>
                 <img src="/images/CSIFINALLOGO.png"/>
             </div>
-            <div className={row + "mb-2"}>
-                <Link href='/'><div className={link}>home</div></Link>
+            <div className={row + "mb-2 bg-slate-200 rounded "}>
+                <Link href='/'><div className={link +"px-2"}>home</div></Link>
                 <div className={gap}></div>
                 <Link href='/about'><div className={link}>about</div></Link>
                 <div className={gap}></div>
                 <Link href='/contacts'><div className={link}>Contact</div></Link>
+                <div className={gap}></div>
+                <Link href='/event'><div className={link}>Event</div></Link>
+                <div className={gap}></div>
+                <Link href='/gallery'><div className={link}>Gallery</div></Link>
             </div>
         </header>
         
