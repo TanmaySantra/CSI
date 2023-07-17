@@ -6,11 +6,11 @@ export default function Home() {
     <div>
       <Caraousel />
       <div>
-        <div className={"mb-3 bg-slate-300 rounded px-4 py-2 "}>
-          <div className="text-center font-serif text-cyan-950">
+      <div className="text-center text-7xl font-serif my-16  text-cyan-950">
             What we do ?
           </div>
-          <div className="text-center font-serif mb-2 ml-5">
+        <div className={"mb-3 bg-slate-300 rounded p-6 "}>          
+          <div className="text-center mb-2 text-slate-900 text-xl ml-5">
             The CSI (Computer Society of India) Kolkata Chapter at UEM College
             is a vibrant and enthusiastic student organization that aims to
             create a thriving environment for computer science and information
@@ -21,11 +21,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={"mb-3 mt-2 bg-slate-300 rounded px-4 py-2 "}>
-          <div className="text-center font-serif text-cyan-950">
-            <h3>Our objectives</h3>
+        <div className="text-center text-7xl font-serif my-16  text-cyan-950">
+            <div>Our objectives</div>
           </div>
-          <div className="text-center font-serif mb-2 ml-5">
+        <div className={"mb-3 bg-slate-300 rounded p-6 "}>
+          
+          <div className="text-center mb-2 text-slate-900 text-xl ml-5">
             The primary objective of the CSI Kolkata Chapter is to promote and
             foster the field of computer science and information technology
             among its members. This includes organizing various activities,
@@ -36,7 +37,7 @@ export default function Home() {
             pursuits and future careers.
           </div>
         </div>
-        <div className="Map grid grid-cols-2 gap-0">
+        <div className="Map grid grid-cols-2 gap-0 mt-16">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14738.050781255724!2d88.4899014!3d22.5599202!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a020b267a3cdc13%3A0xb3b21d652126f40!2sUniversity%20of%20Engineering%20%26%20Management%2C%20Kolkata!5e0!3m2!1sen!2sin!4v1689350881799!5m2!1sen!2sin"
             width="1146"
