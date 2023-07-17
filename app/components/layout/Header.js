@@ -9,6 +9,7 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa6";
+import Toggle from "../Toggle";
 const row = "flex flex-row ";
 const socialIcons = "p-2 hover:bg-slate-200 cursor-pointer h-fit w-fit rounded";
 const gap = "w-4";
@@ -103,9 +104,10 @@ export default function Header() {
             </div>
           </Link> 
           <div className="grow"></div>
-            <div className="uppercase  items-end h-full p-2 rounded">
+            {/* <div className="uppercase  items-end h-full p-2 rounded">
               Button
-            </div>
+            </div> */}
+            <Toggle />
                   
         </div>
         
