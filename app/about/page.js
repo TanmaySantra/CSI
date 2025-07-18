@@ -27,7 +27,7 @@ export default function About() {
         many interested as possible.
       </div>
       <div className="px-10 text-4xl italic font-medium text-neutral-700">
-        The CSI Vision: "lT for Masses"
+        The CSI Vision: &quot;lT for Masses&quot;
       </div>
       <div className="mb-2 bg-slate-200 rounded px-4 py-2 ">
         Keeping in mind the interest of the IT professionals & computer users

@@ -14,6 +14,8 @@ const row = "flex flex-row ";
 const socialIcons = "p-2 hover:bg-slate-200 cursor-pointer h-fit w-fit rounded";
 const gap = "w-4";
 const link = "uppercase h-full p-2 rounded";
+const p="text-center font-serif  italic  text-neutral-700";
+
 export default function Header() {
   const pathname = usePathname();
   
@@ -27,7 +29,7 @@ export default function Header() {
     <div className="">  
       {console.log(pathname)}
       <div className={row + "px-4 py-2 justify-between mb-2 bg-blue-600"}>
-        <span className="w-[400px] text-white text-sm">
+        <span className="w-[400px] text-white text-sm font-serif  ">
           University Of Engineering & Management, New Town, University Area,
           Plot No. III, B/5, New Town Rd, Action Area III, Newtown, Kolkata,
           West Bengal 700160
@@ -56,7 +58,7 @@ export default function Header() {
         <div className={row + "w-[400px] mb-2"}>
           <img src="/images/CSIFINALLOGO.png" />
         </div>
-        <div className={row + " mb-2 bg-slate-200 rounded px-4 py-2 "}>
+        <div className={row + " mb-2 bg-slate-200 rounded px-4 py-2 "+p}>
           <Link href="/">
             <div className={link + (pathname === "/" ? " bg-blue-200" :"  hover:animate-bounce")+""}>
               home
@@ -107,8 +109,7 @@ export default function Header() {
             {/* <div className="uppercase  items-end h-full p-2 rounded">
               Button
             </div> */}
-            <Toggle />
-                  
+            <Toggle />    
         </div>
         
       </header>

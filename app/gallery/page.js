@@ -6,7 +6,7 @@ const imagee="h-[200px] w-[400px] rounded"
 const gap="w-[300px] h-[300px]"
 const overlayshow="flex justify-center items-center fixed top-0 left-0 z-[998] h-full w-full bg-slate-800/80 backdrop-blur-sm"
 const overlayhide="flex justify-center items-center fixed top-0 left-0 z-[998] h-full w-full bg-slate-800/80 backdrop-blur-sm hidden"
-function page() {
+function Page() {
   const [start, setStart] = useState(0)
   const [hidden, setHidden] = useState(true)
   return (
@@ -32,4 +32,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

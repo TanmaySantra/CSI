@@ -6,11 +6,11 @@ export default function Home() {
     <div>
       <Caraousel />
       <div>
-      <div className="text-center text-7xl font-serif my-16  text-cyan-950">
+      <div className="text-center text-7xl font-serif my-16  italic  text-neutral-700">
             What we do ?
           </div>
         <div className={"mb-3 bg-slate-300 rounded p-6 "}>          
-          <div className="text-center mb-2 text-slate-900 text-xl ml-5">
+          <div className="text-center mb-2 italic  text-neutral-700 text-xl ml-5">
             The CSI (Computer Society of India) Kolkata Chapter at UEM College
             is a vibrant and enthusiastic student organization that aims to
             create a thriving environment for computer science and information
@@ -21,12 +21,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="text-center text-7xl font-serif my-16  text-cyan-950">
+        <div className="text-center text-7xl font-serif my-16  italic  text-neutral-700">
             <div>Our objectives</div>
           </div>
         <div className={"mb-3 bg-slate-300 rounded p-6 "}>
           
-          <div className="text-center mb-2 text-slate-900 text-xl ml-5">
+          <div className="text-center mb-2 italic  text-neutral-700 text-xl ml-5">
             The primary objective of the CSI Kolkata Chapter is to promote and
             foster the field of computer science and information technology
             among its members. This includes organizing various activities,
